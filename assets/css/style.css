@@ -374,3 +374,16 @@ um {
   color: #95ABBA;
   margin-right: 28px;
 }
+
+.container {
+  transform: translateX(-400%);
+  transition: transform 0.4s ease;
+}
+
+.container:nth-of-type(even) {
+  transform: translateX(400%);
+}
+
+.container.show {
+  transform: translateX(0);
+}
