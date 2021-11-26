@@ -250,14 +250,14 @@
     </footer>
   </body>
   <script>
-    const boxes = document.querySelectorAll("section");
+    const boxes = document.querySelectorAll(".container");
 
     window.addEventListener("scroll", checkBoxes);
 
-    checkBoxes(); // shows initial box(es)
+    checkBoxes();
 
     function checkBoxes() {
-      const triggerBottom = (window.innerHeight / 5) * 4;
+      const triggerBottom = (window.innerHeight / 5) * 3.9;
 
       boxes.forEach((box) => {
         const boxTop = box.getBoundingClientRect().top;
