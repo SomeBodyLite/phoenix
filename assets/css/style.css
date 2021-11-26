@@ -20,6 +20,7 @@ html {
 body {
   background: #0E1621;
   width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -375,15 +376,15 @@ um {
   margin-right: 28px;
 }
 
-.container {
-  transform: translateX(-400%);
+section {
+  transform: translateX(400%);
   transition: transform 0.4s ease;
 }
 
-.container:nth-of-type(even) {
-  transform: translateX(400%);
+section:nth-of-type(even) {
+  transform: translateX(-400%);
 }
 
-.container.show {
+section.show {
   transform: translateX(0);
 }
