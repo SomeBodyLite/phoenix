@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+svg {
+  vertical-align: middle;
+}
+
+a:focus {
+  outline: none;
+}
+
+html {
+  /* 
+
+  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif; 
+  
+  */
+}
+
+body {
+  background: #0E1621;
+  width: 100%;
+}
+
+header {
+  background: #111A27;
+  width: 100%;
+}
+
+footer {
+  background: #111A27;
+  padding: 60px 0;
+}
+
+.header-content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-start,
+.header-end {
+  align-items: center;
+  display: flex;
+}
+
+.navbar {
+  margin-left: 90px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar-item {
+  margin: 10px;
+}
+
+.navbar-item a {
+  padding: 10px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #95ABBA;
+  text-decoration: none;
+}
+
+.navbar-item a:hover,
+.navbar-item a:focus {
+  color: #FFFFFF;
+}
+
+.navbar-item a:active {
+  color: #CFD7E1;
+}
+
+.tg-icon-1 {
+  width: 25px;
+  height: 23px;
+  margin: 0 17px;
+}
+
+.tg-icon-2 {
+  width: 25px;
+  height: 23px;
+  margin-right: 17px;
+}
+
+.tg-logon {
+  text-decoration: none;
+}
+
+.tg-logon button {
+  fill: #72BBFF;
+  background: none;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #72BBFF;
+}
+
+.tg-logon button:hover,
+.tg-logon button:focus {
+  fill: #A4D3FF;
+  color: #A4D3FF;
+}
+
+.tg-logon button:active {
+  fill: #5589B8;
+  color: #5589B8;
+}
+
+.main-content {
+  display: flex;
+  /* margin-top: 140px;
+  margin-bottom: 100px; */
+  height: 92vh;
+  min-height: 600px;
+  max-height: 900px;
+  align-items: center;
+}
+
+.main-start {
+  width: 42%;
+}
+
+.main-end {
+  width: 58%;
+  overflow: hidden;
+}
+
+.main-text h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 50px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.main-text h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 158.8%;
+  color: #96ABBA;
+}
+
+um {
+  color: #72BBFF;
+}
+
+.main-text_price {
+  display: flex;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: rgba(52, 117, 90, 0.24);
+  border: 2px solid #165537;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 181.6%;
+  color: #25D295;
+  margin-top: 30px;
+}
+
+.main-buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.get-start-1,
+.get-start-2 {
+  text-decoration: none;
+  margin-right: 13px;
+}
+
+.get-start-1 button {
+  background: #3CC7A5;
+  border: 2px solid #3CC7A5;
+  border-radius: 14px;
+  padding: 18px;
+  border: none;
+  display: flex;
+  align-items: center;
+  fill: #ffffff;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 141.6%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.get-start-2 button {
+  background: none;
+  border: 2px solid #4F6070;
+  border-radius: 14px;
+  padding: 18px 40px;
+  text-transform: uppercase;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 141.6%;
+  text-align: center;
+  color: #8294A6;
+}
+
+.illustration img {
+  width: 100%;
+  margin-left: 60px;
+  overflow: hidden;
+}
+
+.advantages {
+  background: #111A27;
+  padding: 65px 0;
+}
+
+.adv-c-head {
+  margin-bottom: 19px;
+}
+
+.adv-c-head h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.adv-c-head h1 b {
+  font-weight: bold;
+}
+
+.adv-c-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -19px;
+  width: 104%;
+}
+
+.adv-card {
+  display: flex;
+  align-items: center;
+  padding: 24px 27px;
+  background: linear-gradient(176.14deg, #212D3E -88.14%, #0E1621 196.44%) padding-box,
+    linear-gradient(to bottom, #2D3A4E, transparent) border-box;
+  color: #313149;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  margin: 19px;
+  width: 26%;
+}
+
+.card-text {
+  margin-left: 25px;
+}
+
+.c-text-1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 141.6%;
+  color: #72BBFF;
+  margin-bottom: 9px;
+}
+
+.c-text-2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 141.6%;
+  color: #FFFFFF;
+}
+
+.bwp {
+  padding: 95px 0;
+}
+
+.bwp-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bwp-start {
+  width: 55%;
+}
+
+.bwp-start h2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+
+.bwp-start h2 b {
+  font-weight: bold;
+  color: #25D295;
+}
+
+.bwp-start h4 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 181.6%;
+  color: #96ABBA;
+  width: 86%;
+}
+
+.bwp-comm {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background: rgba(9, 68, 112, 0.24);
+  border: 1.77883px solid #163655;
+  border-radius: 50px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 181.6%;
+  text-align: right;
+  color: #72BBFF;
+}
+
+.bwp-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.footer-bottom>* {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 141.6%;
+  text-align: right;
+  color: #95ABBA;
+  margin-right: 28px;
+}
