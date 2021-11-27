@@ -18,8 +18,17 @@
               <a href="#">
                 <img src="./assets/images/logo.svg" alt="PhoenixBot" />
               </a>
-              <nav class="navbar">
-                <ul>
+              <div class="menu-burger__header">
+                <span></span>
+              </div>
+              <a class="navbg" href="#"></a>
+              <nav class="header__nav">
+                <img
+                  class="burger-img"
+                  src="./assets/images/logo.svg"
+                  alt="PhoenixBot"
+                />
+                <ul class="menu header__menu">
                   <li class="navbar-item"><a href="#">Цены</a></li>
                   <li class="navbar-item"><a href="#">BotWebPay(BWP)</a></li>
                   <li class="navbar-item"><a href="#">Преимущества</a></li>
@@ -227,11 +236,11 @@
       </div>
     </section>
     <footer>
-      <div class="container">
+      <div class="container showl">
         <div class="row">
           <div class="footer-content">
             <div class="footer-top">
-              <img src="./assets/images/footer-logo.svg" alt="PhoenixBot" />
+              <img src="./assets/images/logo.svg" alt="PhoenixBot" />
               <nav class="navbar">
                 <ul>
                   <li class="navbar-item"><a href="#">Цены</a></li>
@@ -249,6 +258,7 @@
       </div>
     </footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script>
     const boxes = document.querySelectorAll(".container");
 
@@ -257,7 +267,7 @@
     checkBoxes();
 
     function checkBoxes() {
-      const triggerBottom = (window.innerHeight / 5) * 3.9;
+      const triggerBottom = (window.innerHeight / 5) * 4;
 
       boxes.forEach((box) => {
         const boxTop = box.getBoundingClientRect().top;
@@ -269,5 +279,32 @@
         }
       });
     }
+    width = screen.width;
+    console.log("width: ", width);
+    $(document).ready(function () {
+      $(".menu-burger__header").click(function () {
+        $(".menu-burger__header").toggleClass("open-menu");
+        $(".header__nav").toggleClass("open-menu");
+        $("body").toggleClass("fixed-page");
+        $(".navbg").toggleClass("navbg-active");
+      });
+      $(".navbg").click(function () {
+        $(".menu-burger__header").toggleClass("open-menu");
+        $(".header__nav").toggleClass("open-menu");
+        $("body").toggleClass("fixed-page");
+        $(".navbg").toggleClass("navbg-active");
+      });
+      $(".navbar-item").click(function () {
+        if (width >= 768) {
+          console.log("width2: ", width);
+        } else {
+          console.log("width3: ", width);
+          $(".menu-burger__header").toggleClass("open-menu");
+          $(".header__nav").toggleClass("open-menu");
+          $("body").toggleClass("fixed-page");
+          $(".navbg").toggleClass("navbg-active");
+        }
+      });
+    });
   </script>
 </html>
