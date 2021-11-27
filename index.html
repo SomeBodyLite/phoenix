@@ -280,6 +280,13 @@
       });
     }
     width = screen.width;
+    if (width >= 768) {
+    } else {
+      document.body.innerHTML = document.body.innerHTML.replace(
+        /Регистрация через Telegram/g,
+        "Регистрация"
+      );
+    }
     console.log("width: ", width);
     $(document).ready(function () {
       $(".menu-burger__header").click(function () {
