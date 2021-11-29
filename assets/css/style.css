@@ -456,6 +456,10 @@ um {
 }
 
 @media (max-width:768px) {
+  .container {
+    opacity: 1;
+  }
+
   header {
     position: fixed;
     background: #232E3C;

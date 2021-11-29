@@ -260,26 +260,31 @@
   </body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script>
-    const boxes = document.querySelectorAll(".container");
-
-    window.addEventListener("scroll", checkBoxes);
-
-    checkBoxes();
-
-    function checkBoxes() {
-      const triggerBottom = (window.innerHeight / 5) * 4;
-
-      boxes.forEach((box) => {
-        const boxTop = box.getBoundingClientRect().top;
-
-        if (boxTop < triggerBottom) {
-          box.classList.add("show");
-        } else {
-          box.classList.remove("show");
-        }
-      });
-    }
     width = screen.width;
+
+    if (width <= 768) {
+      console.log("Вариант 1");
+    } else {
+      console.log("Вариант 2");
+      const boxes = document.querySelectorAll(".container");
+
+      window.addEventListener("scroll", checkBoxes);
+
+      checkBoxes();
+      function checkBoxes() {
+        const triggerBottom = (window.innerHeight / 5) * 4;
+
+        boxes.forEach((box) => {
+          const boxTop = box.getBoundingClientRect().top;
+
+          if (boxTop < triggerBottom) {
+            box.classList.add("show");
+          } else {
+            box.classList.remove("show");
+          }
+        });
+      }
+    }
     if (width >= 768) {
     } else {
       document.body.innerHTML = document.body.innerHTML.replace(
