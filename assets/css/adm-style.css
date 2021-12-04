@@ -152,6 +152,8 @@ leftside {
 
 .a-c-s-c-block {
   background: #182533;
+  width: 272px;
+  /* flex-shrink: 0; */
   border-radius: 17px;
   display: flex;
   padding: 24px 27px;
@@ -196,6 +198,40 @@ leftside {
   font-size: 16px;
   line-height: 19px;
   color: #5C7484;
+}
+
+.admin-content>section {
+  margin-bottom: 50px;
+}
+
+.shops-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.shops-stats-block {
+  background: #182533;
+  border-radius: 23px;
+  padding: 20px;
+  min-width: 238px;
+  margin-right: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.shops-stats-block:last-child {
+  margin-right: 0;
+}
+
+.stats-count {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #25D295;
 }
 
 @media (max-width:1400px) {}
