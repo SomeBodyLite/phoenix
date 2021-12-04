@@ -108,6 +108,7 @@ leftside {
   margin-left: 285px;
   padding-top: 50px;
   padding-left: 60px;
+  padding-right: 60px;
 }
 
 .adm-navbar__item a {
@@ -146,7 +147,7 @@ leftside {
   margin-bottom: 24px;
 }
 
-.adm-content-section-content {
+.adm-main-content-section-content {
   display: flex;
 }
 
@@ -207,7 +208,6 @@ leftside {
 .shops-stats {
   display: flex;
   justify-content: space-between;
-  width: 95%;
 }
 
 .shops-stats-block {
@@ -232,6 +232,105 @@ leftside {
   font-size: 18px;
   line-height: 21px;
   color: #25D295;
+}
+
+.chart-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: -moz-available;
+}
+
+.chard-head_name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.chead_action {
+  font-family: inherit;
+  background: none;
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E546A;
+}
+
+.chead_action.active {
+  color: #FFFFFF;
+}
+
+.ct-perfect-fourth>svg {
+  position: relative;
+}
+
+.ct-line {
+  stroke-width: 1px;
+}
+
+.ct-point {
+  stroke-width: 7px;
+  stroke-linecap: round;
+}
+
+#chart1 .ct-series-a .ct-line {
+  stroke: #25D295;
+  stroke-width: 1px;
+}
+
+#chart1 .ct-series-a .ct-point {
+  stroke: #ffffff;
+}
+
+#chart2 .ct-series-a .ct-line {
+  stroke: #72BBFF;
+  stroke-width: 1px;
+}
+
+#chart2 .ct-series-a .ct-point {
+  stroke: #ffffff;
+}
+
+.ct-label {
+  color: #717479;
+}
+
+.shops-graph {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ct-perfect-fourth::before {
+  content: none;
+}
+
+#chart1,
+#chart2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #182533;
+  border-radius: 23px;
+  width: 760px;
+  height: fit-content;
+}
+
+.ct-grid {
+  stroke: #294059;
+  stroke-width: 1px;
+  stroke-dasharray: 2px;
+}
+
+
+
+.ct-perfect-fourth::before {
+  padding-bottom: 25%;
 }
 
 @media (max-width:1400px) {}

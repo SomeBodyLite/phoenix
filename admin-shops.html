@@ -8,9 +8,10 @@
     <meta name="msapplication-navbutton-color" content="#232E3C" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#232E3C" />
     <title>PhoenixBot - Admin 1</title>
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="assets/css/adm-style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/chartist.min.css" />
+    <link rel="stylesheet" href="./assets/css/adm-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -69,7 +70,7 @@
           <li class="adm-navbar__item adm-navbar__active navbar_arrow__exist">
             <a href="#">🏪 Магазины</a>
           </li>
-          <li class="adm-navbar__item navbar_arrow__exist">
+          <li class="adm-navbar__item">
             <a href="#">🤖 Боты</a>
           </li>
           <li class="adm-navbar__item">
@@ -104,9 +105,78 @@
               <span class="stats-count stats-count-5">1222</span>
             </div>
           </div>
-          <div class="shops-graph"></div>
+          <div class="shops-graph">
+            <div class="ct-chart ct-perfect-fourth" id="chart1">
+              <div class="chart-head">
+                <div class="chard-head_name">🏪 График заказов</div>
+                <div class="chard-head_actions">
+                  <button class="chead_action active">Сутки</button>
+                  <button class="chead_action">Неделя</button>
+                  <button class="chead_action">Месяц</button>
+                  <button class="chead_action">Все время</button>
+                </div>
+              </div>
+            </div>
+            <div class="ct-chart ct-perfect-fourth" id="chart2">
+              <div class="chart-head">
+                <div class="chard-head_name">🏪 График оборота</div>
+                <div class="chard-head_actions">
+                  <button class="chead_action active">Сутки</button>
+                  <button class="chead_action">Неделя</button>
+                  <button class="chead_action">Месяц</button>
+                  <button class="chead_action">Все время</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      <section>
+        <div class="adm-content-section-head">🏪 Последние покупки</div>
+        <div class="adm-content-section-content"></div>
+      </section>
     </main>
+    <script src="./assets/js/chartist.min.js"></script>
+    <script>
+      var ShopOptions = {
+        high: 100000,
+        low: 0,
+        lineSmooth: false,
+        width: 725,
+        height: 205,
+        fullWidth: true,
+        chartPadding: {
+          right: 10,
+          left: 10,
+        },
+      };
+
+      new Chartist.Line(
+        "#chart1",
+        {
+          labels: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+          series: [
+            [
+              10000, 80000, 72000, 79000, 50000, 47000, 19000, 28000, 26000,
+              90000,
+            ],
+          ],
+        },
+        ShopOptions
+      );
+      new Chartist.Line(
+        "#chart2",
+        {
+          labels: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+          series: [
+            [
+              10000, 80000, 72000, 79000, 50000, 47000, 19000, 28000, 26000,
+              90000,
+            ],
+          ],
+        },
+        ShopOptions
+      );
+    </script>
   </body>
 </html>
