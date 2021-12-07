@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#232E3C" />
     <meta name="msapplication-navbutton-color" content="#232E3C" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#232E3C" />
-    <title>PhoenixBot - Admin 3</title>
+    <title>PhoenixBot - Admin 4</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./assets/css/chartist.min.css" />
@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <style>
       body {
         font-family: Roboto;
@@ -92,17 +93,192 @@
           <form action="aaaaaaa">
             <div class="product-edit-section-head">
               <label for="russian">
-                <input type="radio" name="language" id="russian" checked />
+                <input
+                  type="radio"
+                  name="language"
+                  value="russian"
+                  id="russian"
+                  checked
+                />
                 <span>🇷🇺 Русский</span>
               </label>
               <label for="english">
-                <input type="radio" name="language" id="english" />
+                <input
+                  type="radio"
+                  name="language"
+                  id="english"
+                  value="english"
+                />
                 <span>🇬🇧 Английский</span>
               </label>
+            </div>
+            <div class="product-edit-section-content">
+              <div class="p-e-s-c-block">
+                <div class="p-e-s-c-b-head">Название товара</div>
+                <div class="p-e-s-c-b-content">
+                  <label for="product_avatar">
+                    <span></span>
+                    <input
+                      accept=".png, .jpg, .jpeg"
+                      type="file"
+                      name="avatar"
+                      id="product_avatar"
+                    />
+                  </label>
+                  <input
+                    class="product-name"
+                    type="text"
+                    name="product-name"
+                    maxlength="40"
+                    required
+                    placeholder="Введите название..."
+                  />
+                </div>
+              </div>
+              <div class="p-e-s-c-block">
+                <div class="p-e-s-c-b-head">Тип товара</div>
+                <div class="p-e-s-c-b-content">
+                  <div class="select">
+                    <div class="select__header">
+                      <span class="select__current">Цифровой</span>
+                      <div class="select__icon">
+                        <img src="./assets/images/product-arrow.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="select__body">
+                      <div class="select__item">Цифровой</div>
+                      <div class="select__item">СуперЦифровой</div>
+                      <div class="select__item">ГиперЦифровой</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-e-s-c-block">
+                <div class="p-e-s-c-b-head">Цена</div>
+                <div class="p-e-s-c-b-content price">
+                  <input
+                    placeholder="9999999....."
+                    name="price"
+                    required
+                    max="10000"
+                    type="number"
+                  />
+                  <select id="prices">
+                    <option value="" selected></option>
+                    <option value="1000">1000</option>
+                    <option value="2000">2000</option>
+                    <option value="3000">3000</option>
+                    <option value="4000">4000</option>
+                    <option value="5000">5000</option>
+                  </select>
+                </div>
+              </div>
+              <div class="p-e-s-c-block">
+                <div class="p-e-s-c-b-head">Описание товара</div>
+                <div class="p-e-s-c-b-content">
+                  <textarea
+                    name="product-description"
+                    id="description"
+                    cols="40"
+                    rows="6"
+                    required
+                    maxlength="500"
+                    placeholder="Описание товара (не более 500 символов)"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="p-e-s-c-block">
+                <div class="p-e-s-c-b-head">
+                  Сообщение покупателю после покупки
+                </div>
+                <div class="p-e-s-c-b-content">
+                  <textarea
+                    name="product-buy-message"
+                    id="buy-message"
+                    cols="40"
+                    rows="6"
+                    required
+                    maxlength="500"
+                    placeholder="Сообщение покупателю после покупки (не более 500 символов)"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="p-e-s-c-block">
+                <div class="p-e-s-c-b-head">Продаваемый товар</div>
+                <div class="p-e-s-c-b-content">
+                  <textarea
+                    name="product-being-sold"
+                    id="being-sold"
+                    cols="95"
+                    rows="3"
+                    required
+                    maxlength="500"
+                    placeholder="Продаваемый товар (не более 500 символов)"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="product-edit-section-const">
+              <input type="checkbox" name="const" id="const" />
+              <label for="const">Товар константа</label>
+            </div>
+            <div class="product-edit-section-actions">
+              <input type="submit" value="СОХРАНИТЬ" />
+              <input type="reset" value="ОТМЕНА" />
             </div>
           </form>
         </div>
       </section>
     </main>
   </body>
+  <script>
+    document
+      .querySelector('input[name="avatar"]')
+      .addEventListener("change", function () {
+        if (this.files[0]) {
+          var fr = new FileReader();
+
+          fr.addEventListener(
+            "load",
+            function () {
+              document.querySelector(
+                'label[for="product_avatar"]>span'
+              ).style.backgroundImage = "url(" + fr.result + ")";
+            },
+            false
+          );
+
+          fr.readAsDataURL(this.files[0]);
+        }
+      });
+    $("select#prices").on("change", function () {
+      $('input[name="price"]').val(this.value);
+    });
+    let select = function () {
+      let selectHeader = document.querySelectorAll(".select__header");
+      let selectItem = document.querySelectorAll(".select__item");
+
+      selectHeader.forEach((item) => {
+        item.addEventListener("click", selectToggle);
+      });
+
+      selectItem.forEach((item) => {
+        item.addEventListener("click", selectChoose);
+      });
+
+      function selectToggle() {
+        this.parentElement.classList.toggle("is-active");
+      }
+
+      function selectChoose() {
+        let text = this.innerText;
+        select = this.closest(".select");
+        currentText = select.querySelector(".select__current");
+        currentText.innerText = text;
+        select.classList.remove("is-active");
+      }
+    };
+
+    select();
+  </script>
 </html>
