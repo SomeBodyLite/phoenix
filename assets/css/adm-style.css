@@ -709,6 +709,7 @@ label[for="product_avatar"] span {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #244059;
 }
 
 label[for="product_avatar"]>input {
@@ -805,7 +806,7 @@ label[for="product_avatar"]>input {
   line-height: 19px;
   padding: 12px 20px;
   color: #FFFFFF;
-  width: 230px;
+  width: 185px;
 }
 
 [name="product-being-sold"],
@@ -826,10 +827,15 @@ label[for="product_avatar"]>input {
   width: 100%;
 }
 
-select[id="prices"] {
+select[id="valute"] {
   border: none;
   background: none;
   width: 35px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #54718F;
+  margin-right: 10px;
 }
 
 .p-e-s-c-b-content.price {
@@ -839,8 +845,8 @@ select[id="prices"] {
   border-radius: 7px;
 }
 
-.p-e-s-c-b-content.price::after {
-  content: "₽   ᐯ";
+/* .p-e-s-c-b-content.price::after {
+  content: "  ᐯ";
   position: absolute;
   font-size: 18px;
   line-height: 21px;
@@ -850,7 +856,7 @@ select[id="prices"] {
   transform: translate(0, -50%);
   right: 12px;
   pointer-events: none;
-}
+} */
 
 input[type="number"] {
   -moz-appearance: textfield;
@@ -956,6 +962,125 @@ label:hover:before {
   font-size: 20px;
   line-height: 23px;
   color: #5C7484;
+}
+
+
+table.iksweb {
+  text-decoration: none;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+table.iksweb th {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  background-color: #2B5278;
+}
+
+table.iksweb td {
+  font-size: 13px;
+  color: #354251;
+}
+
+table.iksweb td,
+table.iksweb th {
+  padding: 20px 25px;
+  line-height: 13px;
+  vertical-align: middle;
+  border: 2px solid #1B2836;
+}
+
+table.iksweb tr:hover td {
+  color: #ffffff;
+  background-color: #385474;
+  cursor: default;
+}
+
+table.iksweb td {
+  padding: 14px 25px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background: #202F40;
+}
+
+.mobile-table {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  background: #1B2836;
+  border-radius: 20px;
+  padding-bottom: 30px;
+}
+
+/* table.iksweb td.cell-1 {
+  display: flex;
+  border: none;
+} */
+
+.cell-1-buyer,
+.cell-2-product {
+  display: flex;
+  flex-direction: column;
+}
+
+tr a {
+  text-decoration: none;
+}
+
+.cell-5-price {
+  display: flex;
+}
+
+.cell-5-price-price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #25D295;
+}
+
+.cell-5-price-amount {
+  font-size: 18px;
+  line-height: 21px;
+  color: #5C7484;
+  margin-left: 5px;
+}
+
+.cell-4-status-head,
+.cell-3-product-type-head,
+.cell-2-product-head,
+.cell-1-buyer-name {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.cell-3-product-type-bottom,
+.cell-2-product-bottom,
+.cell-1-buyer-subname {
+  font-size: 14px;
+  line-height: 16px;
+  color: #72BBFF;
+}
+
+.cell-3-product-type-bottom,
+.cell-4-status-bottom {
+  text-transform: uppercase;
+}
+
+.cell-4-status-bottom {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FF6565;
+}
+
+.cell-1-buyer img {
+  margin-left: 8px;
 }
 
 @media (max-width:1400px) {}
