@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#232E3C" />
+    <meta name="msapplication-navbutton-color" content="#232E3C" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#232E3C" />
+    <title>PhoenixBot - Admin 6</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/chartist.min.css" />
+    <link rel="stylesheet" href="./assets/css/adm-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <leftside>
+      <div class="leftside-head">
+        <a href="./admin-main.html"
+          ><img src="./assets/images/logo.svg" alt=""
+        /></a>
+      </div>
+      <div class="leftside-user">
+        <div class="l-user-info d-flex">
+          <div class="l-user-info-img">
+            <img src="./assets/images/user-image.png" alt="" />
+          </div>
+          <div class="l-user-info-stats">
+            <div class="l-user-name">WhomS221</div>
+            <div class="l-user-status">Обычный</div>
+            <a href="#" class="l-user-balance d-flex align-items-center">
+              <p class="l-user-balance-text">1222 ₽</p>
+              <svg
+                width="11"
+                height="13"
+                viewBox="0 0 11 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.579767 11.375H10.4202V13H0.579767V11.375ZM4.67996 0V6.97613L1.15953 3.48806L0 4.63694L5.5 10.0864L11 4.63694L9.84046 3.48806L6.32004 6.97613V0H4.67996Z"
+                  fill="#5C7484"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="leftside-upgrade" style="display: block">
+          <div class="leftside-upgrade-text">🚀 Повысить статус за 199₽</div>
+        </a>
+      </div>
+      <nav class="adm-navbar">
+        <ul class="adm-navbar__menu">
+          <li class="adm-navbar__item">
+            <a href="./admin-main.html">🏠 Главная</a>
+          </li>
+          <li class="adm-navbar__item">
+            <a href="./admin-shops.html">🏪 Магазины</a>
+          </li>
+          <li class="adm-navbar__item">
+            <a href="./admin-bots.html">🤖 Боты</a>
+          </li>
+          <li class="adm-navbar__item">
+            <a href="#">💻 Сайты</a>
+          </li>
+        </ul>
+      </nav>
+    </leftside>
+    <main class="admin-content">
+      <section>
+        <div class="adm-content-section-head">🏪 Настройки магазина</div>
+        <div class="adm-content-section-content">
+          <form action="bbbbbbb">
+            <div class="shop-edit-section-content">
+              <div class="s-e-s-c-block">
+                <div class="s-e-s-c-b-head">Название магазина</div>
+                <div class="s-e-s-c-b-content">
+                  <label for="shop_avatar">
+                    <span></span>
+                    <input
+                      accept=".png, .jpg, .jpeg"
+                      type="file"
+                      name="avatar"
+                      id="shop_avatar"
+                    />
+                  </label>
+                  <input
+                    class="shop-name"
+                    type="text"
+                    name="shop-name"
+                    maxlength="40"
+                    required
+                    placeholder="Введите название..."
+                  />
+                </div>
+              </div>
+              <div class="s-e-s-c-block">
+                <div class="s-e-s-c-b-head">Категория магазина</div>
+                <div class="s-e-s-c-b-content">
+                  <div class="select">
+                    <div class="select__header">
+                      <span class="select__current">Интим</span>
+                      <div class="select__icon">
+                        <img src="./assets/images/product-arrow.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="select__body">
+                      <div class="select__item">Интим</div>
+                      <div class="select__item">Цифровой</div>
+                      <div class="select__item">Продуктовый</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-edit-section-actions">
+              <input type="submit" value="СОХРАНИТЬ" />
+              <input type="reset" value="ОТМЕНА" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div class="s-e-s-c-b-head">Менеджеры</div>
+        <div class="manager-section-content">
+          <a class="a-c-s-c-block" href="#">
+            <div class="a-c-s-c-b-img">
+              <img src="./assets/images/new-img.png" alt="" />
+            </div>
+            <div class="a-c-s-c-b-text">Добавить менеджера</div>
+          </a>
+          <a class="a-c-s-c-block" href="#">
+            <div class="a-c-s-c-b-img">
+              <img src="./assets/images/item_img.png" alt="" />
+            </div>
+            <div class="a-c-s-c-b-text">
+              <div class="a-c-s-c-b-text-top">@minskshop</div>
+              <div class="a-c-s-c-b-text-bottom">id2221121121212</div>
+            </div>
+          </a>
+          <a class="a-c-s-c-block" href="#">
+            <div class="a-c-s-c-b-img">
+              <img src="./assets/images/item_img.png" alt="" />
+            </div>
+            <div class="a-c-s-c-b-text">
+              <div class="a-c-s-c-b-text-top">@minskshop</div>
+              <div class="a-c-s-c-b-text-bottom">id2221121121212</div>
+            </div>
+          </a>
+          <a class="a-c-s-c-block" href="#">
+            <div class="a-c-s-c-b-img">
+              <img src="./assets/images/item_img.png" alt="" />
+            </div>
+            <div class="a-c-s-c-b-text">
+              <div class="a-c-s-c-b-text-top">@minskshop</div>
+              <div class="a-c-s-c-b-text-bottom">id2221121121212</div>
+            </div>
+          </a>
+          <a class="a-c-s-c-block" href="#">
+            <div class="a-c-s-c-b-img">
+              <img src="./assets/images/item_img.png" alt="" />
+            </div>
+            <div class="a-c-s-c-b-text">
+              <div class="a-c-s-c-b-text-top">@minskshop</div>
+              <div class="a-c-s-c-b-text-bottom">id2221121121212</div>
+            </div>
+          </a>
+          <a class="a-c-s-c-block" href="#">
+            <div class="a-c-s-c-b-img">
+              <img src="./assets/images/item_img.png" alt="" />
+            </div>
+            <div class="a-c-s-c-b-text">
+              <div class="a-c-s-c-b-text-top">@minskshop</div>
+              <div class="a-c-s-c-b-text-bottom">id2221121121212</div>
+            </div>
+          </a>
+          <a class="a-c-s-c-block" href="#">
+            <div class="a-c-s-c-b-img">
+              <img src="./assets/images/item_img.png" alt="" />
+            </div>
+            <div class="a-c-s-c-b-text">
+              <div class="a-c-s-c-b-text-top">@minskshop</div>
+              <div class="a-c-s-c-b-text-bottom">id2221121121212</div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    document
+      .querySelector('input[name="avatar"]')
+      .addEventListener("change", function () {
+        if (this.files[0]) {
+          var fr = new FileReader();
+
+          fr.addEventListener(
+            "load",
+            function () {
+              document.querySelector(
+                'label[for="shop_avatar"]>span'
+              ).style.backgroundImage = "url(" + fr.result + ")";
+            },
+            false
+          );
+
+          fr.readAsDataURL(this.files[0]);
+        }
+      });
+    let select = function () {
+      let selectHeader = document.querySelectorAll(".select__header");
+      let selectItem = document.querySelectorAll(".select__item");
+
+      selectHeader.forEach((item) => {
+        item.addEventListener("click", selectToggle);
+      });
+
+      selectItem.forEach((item) => {
+        item.addEventListener("click", selectChoose);
+      });
+
+      function selectToggle() {
+        this.parentElement.classList.toggle("is-active");
+      }
+
+      function selectChoose() {
+        let text = this.innerText;
+        select = this.closest(".select");
+        currentText = select.querySelector(".select__current");
+        currentText.innerText = text;
+        select.classList.remove("is-active");
+      }
+    };
+
+    select();
+  </script>
+</html>
