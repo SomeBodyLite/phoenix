@@ -27,7 +27,7 @@ leftside {
   position: fixed;
   top: 0;
   left: 0;
-  width: 17.8125rem;
+  width: 285px;
   height: 100vh;
   background: #17212B;
 }
@@ -36,7 +36,7 @@ aside.admin-products {
   position: fixed;
   top: 0;
   right: 0;
-  width: 19.375rem;
+  width: 310px;
   height: 100vh;
   background: #17212B;
 }
@@ -50,15 +50,15 @@ aside.admin-products {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.9375rem;
+  padding: 20px 31px;
 }
 
 .aside-product-head-name {
   font-weight: 500;
-  font-size: 1.375rem;
+  font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
-  margin-right: 1.25rem;
+  margin-right: 20px;
 }
 
 .leftside-head img {
@@ -89,8 +89,8 @@ aside.admin-products {
 
 .l-user-name {
   font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   margin-bottom: 1px;
 }
@@ -105,8 +105,8 @@ aside.admin-products {
 .l-user-balance {
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #72BBFF;
 }
 
@@ -146,7 +146,7 @@ aside.admin-products {
 
 .adm-navbar__item a {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 23px;
   color: #FFFFFF;
   padding: 14px 30px;
@@ -215,15 +215,15 @@ aside.admin-products {
 }
 
 .a-c-s-c-b-text {
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
 }
 
 .a-c-s-c-b-text-top {
   font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   margin-bottom: 5px;
   color: #FFFFFF;
 }
@@ -247,12 +247,12 @@ aside.admin-products {
 .shops-stats-block {
   background: #182533;
   border-radius: 23px;
-  padding: 1.25rem;
+  padding: 20px;
   min-width: 238px;
   margin-right: 10px;
   font-weight: normal;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -263,25 +263,25 @@ aside.admin-products {
 
 .stats-count {
   font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #25D295;
 }
 
 .chart-head {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: -moz-available;
 }
 
 .chard-head_name {
   font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   opacity: 0.8;
 }
@@ -426,7 +426,7 @@ aside.admin-products {
 
 .last-buying-section-block {
   display: flex;
-  padding: 1.25rem;
+  padding: 20px;
   background: #182533;
   border-radius: 23px;
   align-items: center;
@@ -434,7 +434,7 @@ aside.admin-products {
   min-width: 370px;
   justify-content: space-between;
   margin-right: 30px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .l-b-s-b-text-date {
@@ -445,8 +445,8 @@ aside.admin-products {
 }
 
 .l-b-s-b-text-name {
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   margin-bottom: 8px;
 }
@@ -508,9 +508,9 @@ aside.admin-products {
 }
 
 .bots-add-bot p {
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
-  padding: 1.25rem;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px;
   color: #FFFFFF;
 }
 
@@ -521,10 +521,10 @@ aside.admin-products {
 .bots-actions-block {
   background: #2B5278;
   border-radius: 23px;
-  padding: 1.25rem 40px;
+  padding: 20px 40px;
   min-width: 160px;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
   color: #99CAF9;
   margin-right: 15px;
@@ -563,8 +563,8 @@ aside.admin-products {
 
 .product-block-head-text-head {
   font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   margin-bottom: 7px;
   text-overflow: ellipsis;
@@ -606,12 +606,12 @@ aside.admin-products {
 
 .categories {
   padding-left: 27px;
-  margin-top: 1.25rem;
+  margin-top: 20px;
 }
 
 .categories .categories-item {
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #E6F0FF;
 }
 
@@ -636,7 +636,7 @@ aside.admin-products {
 .sub-sub-sub-categories-item::before {
   content: "";
   display: inline-block;
-  width: 1.375rem;
+  width: 22px;
   height: 3px;
   background: #37485F;
   border-radius: 104px;
@@ -659,8 +659,8 @@ aside.admin-products {
 }
 
 .product-edit-section-head>label span {
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   opacity: 0.55;
   margin-right: 15px;
@@ -687,7 +687,7 @@ aside.admin-products {
 .s-e-s-c-b-head,
 .p-e-s-c-b-head {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 23px;
   color: #6AB2F2;
   margin-bottom: 14px;
@@ -744,7 +744,7 @@ label[for="product_avatar"]>input {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
-  padding: 0 1.125rem;
+  padding: 0 18px;
 }
 
 .select {
@@ -775,8 +775,8 @@ label[for="product_avatar"]>input {
 }
 
 .select__icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   align-items: center;
   display: flex;
   flex-shrink: 0;
@@ -816,7 +816,7 @@ label[for="product_avatar"]>input {
   border: none;
   font-size: 16px;
   line-height: 19px;
-  padding: 12px 1.25rem;
+  padding: 12px 20px;
   color: #FFFFFF;
   width: 185px;
 }
@@ -828,7 +828,7 @@ label[for="product_avatar"]>input {
   border: 2.15934px solid #233446;
   box-sizing: border-box;
   border-radius: 7.1978px;
-  padding: 1.125rem;
+  padding: 18px;
   font-family: inherit;
   font-size: 16px;
   line-height: 156.19%;
@@ -843,8 +843,8 @@ select[id="valute"] {
   border: none;
   background: none;
   width: 35px;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   text-align: right;
   color: #54718F;
   margin-right: 10px;
@@ -860,8 +860,8 @@ select[id="valute"] {
 /* .p-e-s-c-b-content.price::after {
   content: "  ᐯ";
   position: absolute;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   text-align: right;
   color: #54718F;
   top: 50%;
@@ -945,7 +945,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   top: 3px;
   left: 7px;
-  font-size: 1.375rem;
+  font-size: 22px;
   line-height: 1.2;
   color: #25D295;
   transition: all .2s;
@@ -982,7 +982,7 @@ label:hover:before {
   border: none;
   font-family: inherit;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 23px;
   color: #72BBFF;
   margin-right: 25px;
@@ -993,7 +993,7 @@ label:hover:before {
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 23px;
   color: #5C7484;
 }
@@ -1008,7 +1008,7 @@ table.iksweb {
 
 table.iksweb th {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 23px;
   color: #FFFFFF;
   background-color: #2B5278;
@@ -1021,7 +1021,7 @@ table.iksweb td {
 
 table.iksweb td,
 table.iksweb th {
-  padding: 1.25rem 25px;
+  padding: 20px 25px;
   line-height: 13px;
   vertical-align: middle;
   border: 2px solid #1B2836;
@@ -1035,8 +1035,8 @@ table.iksweb tr:hover td {
 
 table.iksweb td {
   padding: 14px 25px;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   background: #202F40;
 }
@@ -1046,7 +1046,7 @@ table.iksweb td {
   max-width: 100%;
   overflow-x: auto;
   background: #1B2836;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   padding-bottom: 30px;
 }
 
@@ -1071,14 +1071,14 @@ tr a {
 
 .cell-5-price-price {
   font-weight: bold;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #25D295;
 }
 
 .cell-5-price-amount {
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #5C7484;
   margin-left: 5px;
 }
@@ -1087,8 +1087,8 @@ tr a {
 .cell-3-product-type-head,
 .cell-2-product-head,
 .cell-1-buyer-name {
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   margin-bottom: 5px;
 }
@@ -1136,7 +1136,7 @@ tr a {
 
 .bot-users-searchinput {
   position: relative;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .bot-users-searchinput input {
