@@ -161,6 +161,7 @@ aside.admin-products {
   text-decoration: none;
   display: inline-block;
   width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 .navbar_arrow__exist {
@@ -289,6 +290,7 @@ aside.admin-products {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 .chard-head_name {
@@ -515,6 +517,7 @@ aside.admin-products {
   color: #FFFFFF;
   display: inline-block;
   width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 .bots-actions {
@@ -1176,6 +1179,7 @@ tr a {
 
 .bot-users-searchinput input {
   width: -moz-available;
+  width: -webkit-fill-available;
   padding-left: 2.5rem;
   font-family: inherit;
   font-size: 1rem;
