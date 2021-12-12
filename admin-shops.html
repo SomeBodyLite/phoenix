@@ -299,18 +299,72 @@
     </main>
     <script src="./assets/js/chartist.min.js"></script>
     <script>
-      var ShopOptions = {
-        high: 100000,
-        low: 0,
-        lineSmooth: false,
-        width: 685,
-        height: 205,
-        fullWidth: true,
-        chartPadding: {
-          right: 10,
-          left: 10,
-        },
-      };
+      if (screen.width <= 460) {
+        var ShopOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 335,
+          height: 165,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1240) {
+        var ShopOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 435,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1450) {
+        var ShopOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 475,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1800) {
+        var ShopOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 555,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else {
+        var ShopOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 685,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      }
 
       new Chartist.Line(
         "#chart1",

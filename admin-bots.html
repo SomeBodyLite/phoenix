@@ -148,30 +148,164 @@
     </main>
     <script src="./assets/js/chartist.min.js"></script>
     <script>
-      var BotsOptions = {
-        high: 100000,
-        low: 0,
-        lineSmooth: false,
-        width: 685,
-        height: 205,
-        fullWidth: true,
-        chartPadding: {
-          right: 10,
-          left: 10,
-        },
-      };
-      var BotsOptions2 = {
-        high: 100000,
-        low: 0,
-        lineSmooth: false,
-        width: 1400,
-        height: 205,
-        fullWidth: true,
-        chartPadding: {
-          right: 10,
-          left: 10,
-        },
-      };
+      if (screen.width <= 460) {
+        var BotsOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 335,
+          height: 165,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1240) {
+        var BotsOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 435,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1450) {
+        var BotsOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 475,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1800) {
+        var BotsOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 555,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else {
+        var BotsOptions = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 685,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      }
+      if (screen.width <= 460) {
+        var BotsOptions2 = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 320,
+          height: 165,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 610) {
+        var BotsOptions2 = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 400,
+          height: 165,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 840) {
+        var BotsOptions2 = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 600,
+          height: 165,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1240) {
+        var BotsOptions2 = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 800,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1450) {
+        var BotsOptions2 = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 950,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else if (screen.width <= 1800) {
+        var BotsOptions2 = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 1050,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      } else {
+        var BotsOptions2 = {
+          high: 100000,
+          low: 0,
+          lineSmooth: false,
+          width: 1400,
+          height: 205,
+          fullWidth: true,
+          chartPadding: {
+            right: 10,
+            left: 10,
+          },
+        };
+      }
 
       new Chartist.Line(
         "#chart3",
