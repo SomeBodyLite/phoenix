@@ -26,7 +26,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="body">
     <leftside>
       <div class="leftside-head">
         <a href="./admin-main.html"
@@ -35,27 +35,34 @@
       </div>
       <div class="leftside-user">
         <div class="l-user-info d-flex">
-          <div class="l-user-info-img">
-            <img src="./assets/images/user-image.png" alt="" />
+          <div class="mobile-burger">
+            <span class="mobile-burger-1"></span>
+            <span class="mobile-burger-2"></span>
+            <span class="mobile-burger-3"></span>
           </div>
-          <div class="l-user-info-stats">
-            <div class="l-user-name">WhomS221</div>
-            <div class="l-user-status">Обычный</div>
-            <a href="#" class="l-user-balance d-flex align-items-center">
-              <p class="l-user-balance-text">1222 ₽</p>
-              <svg
-                width="11"
-                height="13"
-                viewBox="0 0 11 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.579767 11.375H10.4202V13H0.579767V11.375ZM4.67996 0V6.97613L1.15953 3.48806L0 4.63694L5.5 10.0864L11 4.63694L9.84046 3.48806L6.32004 6.97613V0H4.67996Z"
-                  fill="#5C7484"
-                />
-              </svg>
-            </a>
+          <div class="l-user-info-images">
+            <div class="l-user-info-img">
+              <img src="./assets/images/user-image.png" alt="" />
+            </div>
+            <div class="l-user-info-stats">
+              <div class="l-user-name">WhomS221</div>
+              <div class="l-user-status">Обычный</div>
+              <a href="#" class="l-user-balance">
+                <p class="l-user-balance-text">1222 ₽</p>
+                <svg
+                  width="11"
+                  height="13"
+                  viewBox="0 0 11 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.579767 11.375H10.4202V13H0.579767V11.375ZM4.67996 0V6.97613L1.15953 3.48806L0 4.63694L5.5 10.0864L11 4.63694L9.84046 3.48806L6.32004 6.97613V0H4.67996Z"
+                    fill="#5C7484"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <a href="#" class="leftside-upgrade" style="display: block">
@@ -221,4 +228,5 @@
 
     select();
   </script>
+  <script src="./assets/js/admin-pages.js"></script>
 </html>
